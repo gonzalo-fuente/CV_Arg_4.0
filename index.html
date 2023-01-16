@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- FAVICON -->
+    <link rel="icon" href="./img/logo.png" type="image/png" />
+    <title>Proyecto CV 4.0</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav_list">
+          <li class="nav_item">
+            <a href="#home" class="nav_link">Inicio</a>
+          </li>
+          <li class="nav_item">
+            <a href="#profile" class="nav_link">Perfil</a>
+          </li>
+          <li class="nav_item">
+            <a href="#skills" class="nav_link">Skills</a>
+          </li>
+          <li class="nav_item">
+            <a href="#experience" class="nav_link">Experiencia</a>
+          </li>
+          <li class="nav_item">
+            <a href="#education" class="nav_link">Educacion</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- MAIN SECTION -->
+    <main class="container">
+      <div class="resume">
+        <!--  -->
+        <!-- LEFT CV SECTION -->
+        <div class="resume_left">
+          <!--  -->
+          <!-- HOME SECTION-->
+          <section class="home" id="home">
+            <div class="section home_container bd-grid">
+              <div class="home_data bd-grid">
+                <img
+                  src="https://randomuser.me/api/portraits/women/14.jpg"
+                  alt=""
+                  class="home_img center"
+                />
+                <h1 class="home_title">Rita <b>Chambers</b></h1>
+                <h3 class="home_profession">FullStack Developer</h3>
+              </div>
+              <div class="home_address bd-grid">
+                <span class="home_information">
+                  <i class="fa-solid fa-map-location-dot"></i>
+                  <p>4089 Cherry St</p>
+                </span>
+                <span class="home_information">
+                  <i class="fa-solid fa-envelope"></i>
+                  <p>rita.chambers@example.com</p>
+                </span>
+                <span class="home_information">
+                  <i class="fa-sharp fa-solid fa-phone"></i>
+                  <p>(734) 529-7730</p>
+                </span>
+              </div>
+            </div>
+
+            <!-- Theme change button -->
+            <i
+              class="fa-solid fa-moon change-theme"
+              title="Theme"
+              id="theme-button"
+            ></i>
+          </section>
+          <!-- END HOME SECTION-->
+
+          <!-- SOCIAL SECTION -->
+          <section class="section">
+            <h2 class="section-title">SOCIAL</h2>
+            <div class="social_container bd-grid">
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                class="social_link"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+                <p>@ritachambers</p>
+              </a>
+              <a href="https://github.com/" target="_blank" class="social_link">
+                <i class="fa-brands fa-github"></i>
+                <p>@ritachambers</p>
+              </a>
+              <a
+                href="https://facebook.com/"
+                target="_blank"
+                class="social_link"
+              >
+                <i class="fa-brands fa-facebook"></i>
+                <p>@ritachambers</p>
+              </a>
+            </div>
+          </section>
+          <!-- END SOCIAL SECTION -->
+
+          <!-- PROFILE SECTION -->
+          <section class="profile section" id="profile">
+            <h2 class="section-title">Perfil</h2>
+            <p class="profile_description">
+              Desarrollador fullstack con experiencia en diseño, instalación,
+              pruebas y mantenimiento de sistemas de software. Dominio de varias
+              plataformas, lenguajes y sistemas integrados. Buenas habilidades
+              de colaboración dentro de un equipo de trabajo.
+            </p>
+          </section>
+          <!-- END PROFILE SECTION -->
+
+          <!-- SKILLS SECTION  -->
+          <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <ul class="skills_content bd-grid">
+              <li class="skills_name">
+                <img src="./img/html-5.svg" class="skills_img" />
+              </li>
+              <li class="skills_name">
+                <img src="./img/css-3.svg" class="skills_img" />
+              </li>
+              <li class="skills_name">
+                <img src="./img/react.svg" class="skills_img" />
+              </li>
+              <li class="skills_name">
+                <img src="./img/java.svg" class="skills_img" />
+              </li>
+              <li class="skills_name">
+                <img src="./img/laravel.svg" class="skills_img" />
+              </li>
+              <li class="skills_name">
+                <img src="./img/mysql.svg" class="skills_img" />
+              </li>
+            </ul>
+          </section>
+          <!-- END SKILLS SECTION  -->
+        </div>
+        <!-- END LEFT CV SECTION -->
+
+        <!-- RIGHT CV SECTION -->
+        <div class="resume_right">
+          <!--  -->
+          <!-- EXPERIENCE SECTION-->
+          <section class="section" id="experience">
+            <h2 class="section-title">Experiencia</h2>
+            <div class="experience_container bd-grid">
+              <div class="experience_content">
+                <h3 class="experience_title">
+                  Desarrollador de software en Top Developers, S.A. (2020 -
+                  actualidad)
+                </h3>
+                <p class="experience_description">
+                  Colaboración productiva con el equipo de producción para
+                  conocer los requisitos y las especificaciones empresariales en
+                  torno a la gestión de carteras, el análisis y los riesgos.
+                  Codificación eficaz de cambios y alteraciones de software en
+                  base a especificaciones de diseño concretas. Resolución de
+                  problemas complejos utilizando las últimas tecnologías
+                  móviles, web y de nube. esarrollo y presentación de
+                  conclusiones y soluciones a altos ejecutivos y partes
+                  interesadas.
+                </p>
+              </div>
+              <div class="experience_content">
+                <h3 class="experience_title">
+                  Desarrollador de software en Nubelia Tecnologías (2018 - 2020)
+                </h3>
+                <p class="experience_description">
+                  Abordé eficazmente errores complejos. Implementación y
+                  actualización de módulos de aplicación bajo la dirección de
+                  desarrolladores de software senior. Trabajé con éxito tanto a
+                  nivel independiente como en equipo. Realicé tareas de pruebas
+                  automatizadas y desarrollé funciones complejas de forma
+                  rutinaria.
+                </p>
+              </div>
+            </div>
+          </section>
+          <!-- END EXPERIENCE SECTION-->
+
+          <!-- EDUCATION SECTION -->
+          <section class="section" id="education">
+            <h2 class="section-title">Educacion</h2>
+            <div class="education_container bd-grid">
+              <div class="education_content">
+                <h3 class="education_title">Desarrollo WordPress (2018)</h3>
+                <p class="education_description">AcademiaTech</p>
+              </div>
+              <div class="education_content">
+                <h3 class="education_title">
+                  Programación web FullStack (2017 - 2018)
+                </h3>
+                <p class="education_description">CodeAcademy</p>
+              </div>
+              <div class="education_content">
+                <h3 class="education_title">Diseño UX / UI (2017)</h3>
+                <p class="education_description">CodeAcademy</p>
+              </div>
+              <div class="education_content">
+                <h3 class="education_title">
+                  Máster en Ingeniería Informática (2015 - 2017)
+                </h3>
+                <p class="education_description">
+                  Escuela de Ingeniería Informática
+                </p>
+              </div>
+            </div>
+          </section>
+          <!-- END EDUCATION SECTION -->
+
+          <!-- SCROLL TOP -->
+          <a href="#" class="scrolltop" id="scrolltop">
+            <i class="fa-solid fa-arrow-up scrolltop_icon"></i>
+          </a>
+        </div>
+        <!-- END RIGHT CV SECTION -->
+      </div>
+    </main>
+    <!-- END MAIN SECTION -->
+
+    <!-- JAVASCRIPT -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
