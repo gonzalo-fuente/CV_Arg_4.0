@@ -2,15 +2,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap");
 
 /* CSS VARIABLES */
-:root {
-  --header-height: 3rem;
 
-  /* Colors */
+/* Light Theme Colors */
+:root[theme-mode="light"] {
   --title-color: #0b0a0aff;
   --text-color: #403a3aff;
-  --container-color: #f2e9e4ff /*#fafafa*/;
-  --container-color-alt: #c9ada7ff /*#f0efef*/;
-  --body-color: #9a8c98ff /*#fcfcfc*/;
+  --container-color: #f2e9e4ff;
+  --container-color-alt: #c9ada7ff;
+  --body-color: #9a8c98ff;
+}
+
+/* Dark Theme Colors */
+:root[theme-mode="dark"] {
+  --title-color: #f2f2f2;
+  --text-color: #bfbfbf;
+  --container-color: #4a4e69ff;
+  --container-color-alt: #22223bff;
+  --body-color: #9a8c98ff;
+}
+
+:root {
+  --header-height: 3rem;
 
   /* Font size and typography */
   --body-font: "Roboto", sans-serif;
@@ -42,28 +54,27 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Dark theme Variables */
-body.dark-theme {
-  --title-color: #f2f2f2ff;
-  --text-color: #bfbfbfff;
-  --container-color: #4a4e69ff;
-  --container-color-alt: #22223bff;
-  --body-color: #9a8c98ff;
-}
-
 /* Dark/Light Button */
-.change-theme {
+.toggle-theme {
   position: absolute;
   left: 0;
-  top: 2rem;
+  top: 0.85rem;
   display: flex;
+  gap: 0.25rem;
   color: var(--text-color);
-  font-size: 1.2rem;
-  cursor: pointer;
+  font-size: 0.75rem;
+  padding: 0.125em;
+  background-color: transparent;
+  border-radius: 5rem;
 }
 
-.change-theme:hover {
-  color: var(--text-color);
+.toggle-theme:hover {
+  color: var(--title-color);
+}
+
+.theme-icon {
+  opacity: 1;
+  transition: opacity 700ms ease-in-out;
 }
 
 body {
@@ -312,15 +323,20 @@ img {
 }
 
 /* Scroll top */
-.scrolltop {
+.scroll-top {
   position: fixed;
   right: 1rem;
   bottom: 1rem;
-  transition: 0.4s;
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
 }
 
-.scrolltop_icon {
+.scroll-top_icon {
   color: var(--title-color);
+}
+
+.hide {
+  opacity: 0;
 }
 
 /*========== MEDIA QUERIES ==========*/
@@ -329,6 +345,11 @@ img {
   body {
     margin: 3rem 0;
     background-color: var(--body-color);
+  }
+
+  .toggle-theme {
+    top: 1.5rem;
+    font-size: 1rem;
   }
 
   .container {
@@ -371,7 +392,7 @@ img {
     justify-self: start;
   }
 
-  .scrolltop {
+  .scroll-top {
     display: none;
   }
 }
