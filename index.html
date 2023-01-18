@@ -57,25 +57,27 @@
             <div class="section home_container bd-grid">
               <div class="home_data bd-grid">
                 <img
+                  id="contact-img"
                   src="https://randomuser.me/api/portraits/women/14.jpg"
-                  alt=""
-                  class="home_img center"
+                  alt="Contact profile picture"
+                  class="home_img"
                 />
-                <h1 class="home_title">Rita Chambers</h1>
+
+                <h1 id="contact-name" class="home_title">Rita Chambers</h1>
                 <h3 class="home_profession">FullStack Developer</h3>
               </div>
               <div class="home_information bd-grid">
                 <span class="home_contact_information">
                   <i class="fa-solid fa-map-location-dot"></i>
-                  <p>4089 Cherry St</p>
+                  <p id="contact-address">4089 Cherry St</p>
                 </span>
                 <span class="home_contact_information">
                   <i class="fa-solid fa-envelope"></i>
-                  <p>rita.chambers@example.com</p>
+                  <p id="contact-email">rita.chambers@example.com</p>
                 </span>
                 <span class="home_contact_information">
                   <i class="fa-sharp fa-solid fa-phone"></i>
-                  <p>(734) 529-7730</p>
+                  <p id="contact-phone">(734) 529-7730</p>
                 </span>
               </div>
             </div>
@@ -98,11 +100,11 @@
                 class="social_link"
               >
                 <i class="fa-brands fa-linkedin"></i>
-                <p>@ritachambers</p>
+                <p class="contact-social">@ritachambers</p>
               </a>
               <a href="https://github.com/" target="_blank" class="social_link">
                 <i class="fa-brands fa-github"></i>
-                <p>@ritachambers</p>
+                <p class="contact-social">@ritachambers</p>
               </a>
               <a
                 href="https://facebook.com/"
@@ -110,7 +112,7 @@
                 class="social_link"
               >
                 <i class="fa-brands fa-facebook"></i>
-                <p>@ritachambers</p>
+                <p class="contact-social">@ritachambers</p>
               </a>
             </div>
           </section>
@@ -161,7 +163,7 @@
         <div class="resume_right">
           <!--  -->
           <!-- EXPERIENCE SECTION-->
-          <section class="section" id="experience">
+          <section class="experience section" id="experience">
             <h2 class="section-title">Experiencia</h2>
             <div class="experience_container bd-grid">
               <div class="experience_content">
@@ -199,7 +201,7 @@
           <!-- END EXPERIENCE SECTION-->
 
           <!-- EDUCATION SECTION -->
-          <section class="section" id="education">
+          <section class="education section" id="education">
             <h2 class="section-title">Educacion</h2>
             <div class="education_container bd-grid">
               <div class="education_content">
@@ -239,6 +241,7 @@
     <!-- END MAIN SECTION -->
 
     <!-- JAVASCRIPT -->
-    <script src="./js/main.js"></script>
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/fetch.js"></script>
   </body>
 </html>

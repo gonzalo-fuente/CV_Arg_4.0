@@ -260,6 +260,7 @@ img {
   border-radius: 50%;
   justify-content: center;
   margin-bottom: var(--mb-1);
+  cursor: pointer;
 }
 
 .home_title {
