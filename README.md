@@ -14,7 +14,7 @@ Al presionar sobre la imagen del CV, se realizara un pedido a la API de Random U
 
 - HTML
 - CSS
-- JAvaScript
+- JavaScript
 
 ## Use cases
 
