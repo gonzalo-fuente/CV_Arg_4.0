@@ -66,8 +66,3 @@ function scrollToTop() {
 }
 
 window.addEventListener("scroll", scrollToTop);
-
-/* SORT SKILLS */
-import { skillsData } from "./skills.js";
-
-console.log(skillsData);
