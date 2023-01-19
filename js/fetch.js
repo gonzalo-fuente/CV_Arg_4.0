@@ -27,6 +27,7 @@ function sortSkills() {
 
   liSkills.forEach((skill, index) => {
     skill.src = skillsData[randomArray[index]].img;
+    skill.alt = `${skillsData[randomArray[index]].text} logo`;
   });
 }
 
